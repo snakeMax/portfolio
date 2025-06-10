@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import LetterGlitch from "../../reactbits/Backgrounds/LetterGlitch/LetterGlitch";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LetterGlitch
+                    glitchColors={["#2b4539", "#61dca3", "#61b3dc"]}
+                    glitchSpeed={50}
+                    centerVignette={true}
+                    outerVignette={false}
+                    smooth={true}
+                  />
+                  
       <Navbar />
 
         {children}
