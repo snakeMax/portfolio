@@ -1,22 +1,24 @@
 @import "tailwindcss";
 
+//vi bruker samme background og foreground farger som i dark mode, for å sørge for at siden ser bra ut i både lys og mørk modus. Kan på et senere tidspunkt vurdere å lage en egen lys modus, og en knapp for å bytte mellom modusene.
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #0a0a0a;
+    --foreground: #ededed;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
@@ -27,13 +29,13 @@ body {
 }
 
 h3 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 h4 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 h5 {
-  font-size: 16px;
+    font-size: 16px;
 }
