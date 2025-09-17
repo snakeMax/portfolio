@@ -1,3 +1,5 @@
+//Vi legger alle skills inn her i en variabel, så er det lett å endre på senere
+
 const PORTFOLIO = {
     title: "Portfolio",
     intro: "Below is a quick overview of skills and relevant experience. ",

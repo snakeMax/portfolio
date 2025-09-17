@@ -7,7 +7,7 @@ type Project = {
 };
 
 const LOCAL_PROJECTS: Project[] = [
-    // Eksempel (kan slettes):
+    // Eksempel på et prosjekt og hvordan du setter dette opp, her kan du lage flere prosjekter
     // {
     //   title: "Auth Gateway",
     //   summary: "Central auth + rate limiting for microservices.",

@@ -1,3 +1,5 @@
+//informartion om deg, endres til det du ønsker
+
 const ABOUT = {
     title: "About Me",
     originalParagraphs: [
@@ -15,7 +17,7 @@ const ABOUT = {
         { label: "Hosting", value: "Hetzner (mostly) & Docker" },
     ],
 
-    //legg til flere, eller endre skills om du vil
+    //legg til flere, eller endre skills etter behov
     skills: [
         "C#",
         "Node.js",

@@ -1,4 +1,4 @@
-"use client";
+"use client"; //Vi bruker use client fordi vi har en interaksjon på denne siden, altså ting som skal kunne endres på klientsiden
 
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
