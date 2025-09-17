@@ -1,7 +1,7 @@
-import dataList from "@/components/datalist";
-import dynamic from "next/dynamic";
+// import dataList from "@/components/datalist";
+// import dynamic from "next/dynamic";
 
-const CustomDataList = dynamic(() => import("@/components/datalist"), { ssr: true });
+// const CustomDataList = dynamic(() => import("@/components/datalist"), { ssr: true });
 
 export default function page() {
   return (
@@ -10,7 +10,7 @@ export default function page() {
         <div className="flex flex-col items-center">  
           <h1>Projects</h1>
 
-          <CustomDataList />
+          {/* <CustomDataList /> */}
         </div>
       </div>
     </div>

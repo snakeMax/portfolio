@@ -9,18 +9,18 @@ export default function page() {
           <h1 className="text-4xl font-bold my-4 text-white">Contact me</h1>
 
           <p className="text-xl my-4 text-white">
-            Here are my socials and contact information
+            Here are my socials and contact information. Feel free to reach out to me on Linkedin or check out my work on github.
           </p>
 
           <div className="flex flex-row items-center gap-4 my-8 text-xl border-2 border-white rounded-2xl px-4 py-2 bg-gray-800 h-35 w-full">
-            <a href="https://github.com/snakeMax" className="flex flex-row items-center gap-4">
+            <a href="https://github.com/snakeMax" className="flex flex-row items-center gap-4" target="_blank" rel="noopener noreferrer">
               <FaGithub size={80} />
               <p>GitHub</p>
             </a>
           </div>
 
           <div className="flex flex-row items-center gap-4 my-8 text-xl border-2 border-white rounded-2xl px-4 py-2 bg-gray-800 h-35 w-full">
-            <a href="https://www.linkedin.com/in/chloeknutsen/" className="flex flex-row items-center gap-4">
+            <a href="https://www.linkedin.com/in/chloeknutsen/" className="flex flex-row items-center gap-4" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={80} />
               <p>LinkedIn</p>
             </a>
