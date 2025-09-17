@@ -1,4 +1,4 @@
-//informartion om deg, endres til det du ønsker
+//info om deg, endres til det du ønsker
 
 const ABOUT = {
     title: "About Me",
@@ -38,7 +38,13 @@ const ABOUT = {
         `I like to measure things. If it's not monitored, it doesn't exist (well, maybe it does, but we won't know).`,
         `I prototype quickly, then slow down and make it reliable. Little hacks are ok — as long as there's a plan to clean them up later.`,
     ],
-    cta: [{ label: "GitHub", href: "https://github.com/snakeMax" }],
+    cta: [
+        {
+            label: "GitHub",
+            href: "https://github.com/snakeMax",
+            _target: "_blank",
+        },
+    ],
 };
 // ===================================================================
 

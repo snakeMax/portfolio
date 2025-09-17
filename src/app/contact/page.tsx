@@ -1,12 +1,11 @@
 "use client"; //Vi bruker use client fordi vi har en interaksjon på denne siden, altså ting som skal kunne endres på klientsiden
 
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const CONTACT = {
     title: "Contact me",
     intro: "Here are my socials and contact information. Feel free to reach out!",
-    email: "name@example.com",
+
     items: [
         {
             label: "GitHub",
@@ -21,29 +20,17 @@ const CONTACT = {
     ] as {
         label: string;
         href: string;
-        icon: "github" | "linkedin" | "email";
+        icon: "github" | "linkedin";
     }[],
 };
 
 export default function Page() {
-    const [copied, setCopied] = useState(false);
-
-    const copyEmail = async () => {
-        try {
-            await navigator.clipboard.writeText(CONTACT.email);
-            setCopied(true);
-            setTimeout(() => setCopied(false), 1500);
-        } catch {}
-    };
-
     const renderIcon = (name: "github" | "linkedin" | "email") => {
         switch (name) {
             case "github":
                 return <FaGithub size={80} />;
             case "linkedin":
                 return <FaLinkedin size={80} />;
-            case "email":
-                return <FaEnvelope size={80} />;
         }
     };
 
@@ -58,31 +45,6 @@ export default function Page() {
                     <p className='text-xl my-4 text-white text-center'>
                         {CONTACT.intro}
                     </p>
-
-                    {CONTACT.email ? (
-                        <div className='flex flex-row items-center justify-between gap-4 my-4 text-xl border-2 border-white rounded-2xl px-4 py-2 bg-gray-800 w-full'>
-                            <a
-                                href={`mailto:${CONTACT.email}`}
-                                className='flex flex-row items-center gap-4'
-                                aria-label='Send email'
-                            >
-                                <FaEnvelope size={80} />
-                                <div className='flex flex-col'>
-                                    <p className='text-white'>Email</p>
-                                    <span className='text-sm text-grey-600'>
-                                        {CONTACT.email}
-                                    </span>
-                                </div>
-                            </a>
-                            <button
-                                onClick={copyEmail}
-                                className='rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-sm text-white/90 hover:border-green-400/50 hover:shadow-[0_0_16px_rgba(0,255,0,.25)] transition'
-                                aria-label='Copy email to clipboard'
-                            >
-                                {copied ? "Copied!" : "Copy"}
-                            </button>
-                        </div>
-                    ) : null}
 
                     {CONTACT.items.map((item) => (
                         <div
