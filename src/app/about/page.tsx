@@ -1,3 +1,5 @@
+import { FaGithub } from "react-icons/fa"; //FaGithub
+
 const ABOUT = {
     title: "About Me",
     originalParagraphs: [
@@ -11,8 +13,8 @@ const ABOUT = {
     ],
     facts: [
         { label: "Location", value: "Norway" },
-        { label: "Primary focus", value: "Backend, APIs, Observability" },
-        { label: "Hosting", value: "Hetzner (mostly) & Docker" },
+        { label: "Primary focus", value: "Backend, OOP, Data science" },
+        { label: "Hosting", value: "Hetzner & Hostinger" },
     ],
 
     //legg til flere, eller endre skills etter behov
@@ -21,16 +23,16 @@ const ABOUT = {
         "Node.js",
         "Python",
         "REST",
-        "Docker",
-        "CI/CD",
-        "PostgreSQL",
+        "SQL",
+        "OOP",
+        "Git",
     ],
 
     //om du har lyst på en timeline, kan du legge til her!
     timeline: [
-        { year: "2025", what: "legg til tekst" },
-        { year: "2024", what: "legg til mere tekst" },
-        { year: "2023", what: "og gjerne litt mer tekst" },
+        { year: "2025", what: "Pytorch, Matplotlib" },
+        { year: "2022", what: "C#" },
+        { year: "2020", what: "Python" },
     ],
     paragraphs: [
         `I like to measure things. If it's not monitored, it doesn't exist (well, maybe it does, but we won't know).`,
@@ -141,10 +143,18 @@ export default function Page() {
                         <a
                             key={c.href}
                             href={c.href}
-                            className='rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/90 transition hover:border-green-400/50 hover:shadow-[0_0_16px_rgba(0,255,0,.25)]'
+                            className='rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/90 transition hover:border-green-400/50 hover:shadow-[0_0_16px_rgba(0,255,0,.25)] flex items-center gap-2'
+                            target={c._target}
+                            rel={
+                                c._target === "_blank"
+                                    ? "noopener noreferrer"
+                                    : undefined
+                            }
                         >
+                            <FaGithub />
                             {c.label}
                         </a>
+                        
                     ))}
                 </div>
             </div>

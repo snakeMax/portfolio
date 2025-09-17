@@ -25,8 +25,8 @@ export default function Navbar() {
                     key={item.key}
                     href={item.href}
                     onClick={() => setActiveNav(item.key)}
-                    className={`text-gray-600 hover:text-blue-600 transition-colors ${
-                        activeNav === item.key ? "text-blue-600 scale-110" : ""
+                    className={`text-gray-600 hover:text-green-600 transition-colors ${
+                        activeNav === item.key ? "text-green-600 scale-110" : ""
                     }`}
                     aria-current={activeNav === item.key ? "page" : undefined}
                 >

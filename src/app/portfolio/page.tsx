@@ -5,64 +5,70 @@ const PORTFOLIO = {
         {
             label: "Languages",
             items: [
-                { name: "Go", level: 4 },
-                { name: "C#", level: 5 },
-                { name: "Node.js", level: 4 },
-                { name: "Python", level: 5 },
-                { name: "TypeScript", level: 3 },
+                { name: "Python", level: 4 },
+                { name: "Java", level: 2 },
+                { name: "C#", level: 3 },
+                { name: "C++", level: 2 },
+                { name: "JavaScript", level: 2 },
+                { name: "TypeScript", level: 2 },
             ],
         },
         {
             label: "Frameworks / APIs",
             items: [
-                { name: ".NET", level: 5 },
-                { name: "Fastify", level: 3 },
-                { name: "gRPC", level: 4 },
-                { name: "REST", level: 5 },
+                { name: ".NET", level: 3 },
+                { name: "React", level: 3 },
+                { name: "Matplotlib", level: 3 },
+                { name: "Pytorch", level: 3 },
+                { name: "REST", level: 2 },
+                { name: "Node.js", level: 3 },
             ],
         },
         {
             label: "Databases & Messaging",
             items: [
-                { name: "PostgreSQL", level: 4 },
-                { name: "Redis", level: 4 },
-                { name: "RabbitMQ", level: 3 },
+                { name: "SQL", level: 3 },
+                { name: "Firebase", level: 2 },
+                { name: "MySQL", level: 2 },
             ],
         },
         {
             label: "DevOps / Infra",
             items: [
-                { name: "Docker", level: 5 },
-                { name: "Kubernetes", level: 3 },
-                { name: "GitHub Actions", level: 4 },
+                { name: ".NET", level: 3 },
+                { name: "Azure", level: 1 },
+                { name: "GitHub Actions", level: 1 },
             ],
         },
         {
             label: "Hosting",
             items: [
-                { name: "Hetzner", level: 4 },
+                { name: "Hetzner", level: 2 },
                 { name: "Vercel", level: 2 },
+                { name: "Hostinger", level: 3 },
             ],
         },
         {
             label: "Practices",
             items: [
-                { name: "CI/CD", level: 4 },
+                { name: "OOP", level: 4 },
                 { name: "Observability", level: 3 },
-                { name: "Testing", level: 3 },
-                { name: "API Design", level: 4 },
+                { name: "Testing", level: 2 },
+                { name: "API Design", level: 2 },
+                { name: "Networking", level: 3 },
+                { name: "Cyber Security", level: 3 },
             ],
         },
         {
             label: "Other Relevant",
             items: [
-                { name: "Linux", level: 4 },
+                { name: "Linux", level: 3 },
                 { name: "Shell (bash/pwsh)", level: 3 },
                 { name: "Git", level: 4 },
             ],
         },
     ],
-    notes: ["Prefer boring code that runs."],
+    notes: ["Prefer clean code that runs.", "Keen and quick to learn new things.", "Enjoys thinking logistically."],
 };
 // ==============================================================================
 
